@@ -1,14 +1,15 @@
 #include <stdio.h>
 
 int main(void) {
-    char c;
-    int i;
+    int i, j;
 
-    printf("input a character : ");
-    scanf("%c", &c);
+    printf("input a numerator : ");
+    scanf("%d", &i);
 
-    i = c + 1;
-    printf("The next character of %c (%d) : %c", c, c, i);
+    printf("input a denominator : ");
+    scanf("%d", &j);
+
+    printf("Dividing result : %f\n", (float)i/j);
 
     return 0;
 }
