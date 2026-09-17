@@ -1,16 +1,14 @@
 #include <stdio.h>
 
 int main(void) {
-    int input_int;
-    float input_float;
+    char c;
+    int i;
 
-    printf("enter an integer :");
-    scanf("%d", &input_int);
+    printf("input a number :");     // 5를 입력하면 c에 문자 '5'가 입력, '5'는 아스키 코드 53
+    scanf("%c", &c);
 
-    printf("enter a float :");
-    scanf("%f", &input_float);
-
-    printf("integer : %d, float : %f\n", input_int, input_float);
+    i = c-48;
+    printf("The input number is %i\n", i);
 
     return 0;
 }
